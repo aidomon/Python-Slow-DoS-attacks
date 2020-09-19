@@ -1,6 +1,8 @@
 # Python-Slow-DoS-attacks
 Bachelor's thesis "Slow rate DoS attacks independent of application layer protocol".
 
+The resulting system is intended for installation directly on a protected server with the Linux operating system (tested on the Ubuntu distribution).
+
 ## Table of content
 1.  [Slow DoS attack generator](#Slow-DoS-attack-generator)
     -   [How to install and run the script?](#How-to-install-and-run-the-script?)
@@ -9,7 +11,7 @@ Bachelor's thesis "Slow rate DoS attacks independent of application layer protoc
 2.  [Slow DoS Intrusion Detection System](#Slow-DoS-Intrusion-Detection-System)
 
 # Slow DoS attack generator
-Python script SlowDoSGen.py is a generator of slow DoS attacks Slowcomm and Slow Next, used to prevent service on application layer protocols. To do this, so-called sockets are used, which connect the attacker's computer with the targeted server. These attacks have 3 phases:
+Python script SlowDoSGen.py in GENERATOR folder is a generator of slow DoS attacks Slowcomm and Slow Next, used to prevent service on application layer protocols. To do this, so-called sockets are used, which connect the attacker's computer with the targeted server. These attacks have 3 phases:
 
 1. Establishing the maximum number of connections to the server using the so-called initial requests.
 2. Keeping the connection active by means of so-called maintenance requirements.
@@ -61,7 +63,7 @@ Slow Next:
 
 # Slow DoS Intrusion Detection System
 
-For the correct operation of the detector, it is necessary to install the Scapy library using `sudo pip3 install scapy` command. The script must also be run with an administrator rights using the command line with the command `sudo python3 SlowDoS_IDS.py`. Python 3.0 and higher is required to run. 
+DETECTOR folder. For the correct operation of the detector, it is necessary to install the Scapy library using `sudo pip3 install scapy` command. The script must also be run with an administrator rights using the command line with the command `sudo python3 SlowDoS_IDS.py`. Python 3.0 and higher is required to run. 
 
 The script prompts the user to select one of the available interfaces on the protected server. It then obtains its IP address and stores it in the mentioned sniff filter. Further it already works automatically, it only displays a message when an attack is detected.
 
