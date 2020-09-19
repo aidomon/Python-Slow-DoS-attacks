@@ -61,9 +61,9 @@ Slow Next:
 
 # Slow DoS Intrusion Detection System
 
-For the correct operation of the detector, it is necessary to install the Scapy library using `sudo pip3 install scapy` command. The program must also be run with an administrator rights using the command line with the command `sudo python3 SlowDoS_IDS.py`. Python 3.0 and higher is required to run. 
+For the correct operation of the detector, it is necessary to install the Scapy library using `sudo pip3 install scapy` command. The script must also be run with an administrator rights using the command line with the command `sudo python3 SlowDoS_IDS.py`. Python 3.0 and higher is required to run. 
 
-The program prompts the user to select one of the available interfaces on the protected server. It then obtains its IP address and stores it in the mentioned sniff filter. Further it already works automatically, it only displays a message when an attack is detected.
+The script prompts the user to select one of the available interfaces on the protected server. It then obtains its IP address and stores it in the mentioned sniff filter. Further it already works automatically, it only displays a message when an attack is detected.
 
 More information can be found in the bachelor thesis:
 
