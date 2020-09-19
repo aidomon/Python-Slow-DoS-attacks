@@ -3,13 +3,14 @@ Bachelor's thesis "Slow rate DoS attacks independent of application layer protoc
 
 ## Table of content
 1.  [Slow DoS attack generator](#Slow-DoS-attack-generator)
-    - [How to install and run the script?](#How to install and run the script?)
-    - [Attack configuration](#Attack configuration)
-    - [Examples of use on a web server](#Examples of use on a web server)
-2. [Slow DoS Intrusion Detection System](#Slow DoS Intrusion Detection System)
+    -   [How to install and run the script?](#How-to-install-and-run-the-script?)
+    -   [Attack configuration](#Attack-configuration)
+    -   [Examples of use on a web server](#Examples-of-use-on-a-web-server)
+2.  [Slow DoS Intrusion Detection System](#Slow-DoS-Intrusion-Detection-System)
 
 # Slow DoS attack generator
 Python script SlowDoSGen.py is a generator of slow DoS attacks Slowcomm and Slow Next, used to prevent service on application layer protocols. To do this, so-called sockets are used, which connect the attacker's computer with the targeted server. These attacks have 3 phases:
+
 1. Establishing the maximum number of connections to the server using the so-called initial requests.
 2. Keeping the connection active by means of so-called maintenance requirements.
 3. Detection of closed connections and their replacement with new ones.
