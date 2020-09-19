@@ -61,6 +61,9 @@ Slowcomm:
 Slow Next:
 `python3 SlowDoSGen.py -a N -ip 10.10.0.2 -c 140 -p 80`
 
+
+
+
 # Slow DoS Intrusion Detection System
 
 DETECTOR folder. For the correct operation of the detector, it is necessary to install the Scapy library using `sudo pip3 install scapy` command. The script must also be run with an administrator rights using the command line with the command `sudo python3 SlowDoS_IDS.py`. Python 3.0 and higher is required to run. 
