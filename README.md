@@ -1,11 +1,11 @@
 # Python-Slow-DoS-attacks
-Bachelor's thesis "Slow rate DoS attacks independent of application layer protocol"
+Bachelor's thesis "Slow rate DoS attacks independent of application layer protocol".
 
 ## Table of content
-1. [Slow DoS attack generator](#Slow DoS attack generator)
-  - [How to install and run the script?](#How to install and run the script?)
-  - [Attack configuration](#Attack configuration)
-  - [Examples of use on a web server](#Examples of use on a web server)
+1.  [Slow DoS attack generator](#Slow DoS attack generator)
+    - [How to install and run the script?](#How to install and run the script?)
+    - [Attack configuration](#Attack configuration)
+    - [Examples of use on a web server](#Examples of use on a web server)
 2. [Slow DoS Intrusion Detection System](#Slow DoS Intrusion Detection System)
 
 # Slow DoS attack generator
@@ -18,13 +18,14 @@ More information can be found in the bachelor thesis:
 
 ## How to install and run the script?
 
-Download the SlowDoSGen.py script. It is started from the command line with the python command
+Download the SlowDoSGen.py script. It is started from the command line with the `python` command
 and generator names with associated parameters. Python version 3.0 and higher is required to run. To display help, execute the command:
 `python3 SlowDoSGen.py -h`.
 
 ## Attack configuration
 
 Attacks can be configured using the following parameters.
+
 ### Mandatory parameters:
 - `a <str>`
 This parameter is used to distinguish between individual attacks. `-a C` for Slowcomm attack
@@ -56,7 +57,6 @@ Slow Next:
 
 # Slow DoS Intrusion Detection System
 
-For the correct operation of the detector, it is necessary to install the mentioned Scapy library using sudo pip3 install scapy command. The program must also be run with an administrator
-rights using the command line with the command sudo python3 SlowDoS_IDS.py. Python 3.0 and higher is required to run. 
-The program prompts the user to select one of the available interfaces on the protected
-server. It then obtains its IP address and stores it in the mentioned sniff filter. Further it already works automatically, it only displays a message when an attack is detected.
+For the correct operation of the detector, it is necessary to install the mentioned Scapy library using sudo pip3 install scapy command. The program must also be run with an administrator rights using the command line with the command sudo python3 SlowDoS_IDS.py. Python 3.0 and higher is required to run. 
+
+The program prompts the user to select one of the available interfaces on the protected server. It then obtains its IP address and stores it in the mentioned sniff filter. Further it already works automatically, it only displays a message when an attack is detected.
